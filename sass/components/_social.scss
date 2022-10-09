@@ -1,0 +1,32 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 32px 30px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms var(--timing-funcion);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    
+    }
+}
+
+.social__icon {
+    fill: var(--color-border-client);
+    width: 20px;
+    height: 20px;
+
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: var(--bgd-color);
+    }
+}
