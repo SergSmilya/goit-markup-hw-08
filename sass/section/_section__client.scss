@@ -1,16 +1,41 @@
 .client__list {
-    display: flex;
+
+    @media screen and(min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        display: flex;
+    }
+    
 }
 
 .client__items+.client__items {
-    margin-left: 30px;
+
+    @media screen and(min-width: 1200px) {
+        margin-left: 30px;
+    }
+    
 }
 
 .client__link {
+    @media screen and(min-width: 480px) {
+        width: 210px;
+    }
+
+    @media screen and(min-width: 480px) {
+        width: 226px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 170px;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    
     height: 92px;
     border: 1px solid var(--color-border-client);
     border-radius: 4px;

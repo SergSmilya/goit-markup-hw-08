@@ -1,6 +1,22 @@
+.header-page {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
+
+}
+
 .header-all {
-    display: flex;
-    align-items: center;
+    @media screen and(min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media screen and(min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 .header__link {
@@ -40,8 +56,17 @@
 }
 
 .header__nav {
-    display: flex;
-    margin-left: 93px;
+    @media screen and(min-width: 480px) {
+        display: none;
+    }
+    @media screen and(min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+    @media screen and(min-width: 1200px) {
+        display: flex;
+        margin-left: 93px;
+    }
 }
 
 .header__nav .lex+.lex {
@@ -55,6 +80,11 @@
 }
 
 .auth__link {
+    @media screen and(min-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        } 
+    }
     display: flex;
     align-items: center;
     color: var(--primary-color-text);
@@ -73,12 +103,23 @@
 }
 
 .header-page .auth__nav {
-    display: flex;
-    margin-left: auto;
+    @media screen and(min-width: 480px) and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and(min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+    }
+    
 }
 
+
 .auth__nav .head+.head {
-    margin-left: 50px;
+    @media screen and(min-width: 1200px) {
+        margin-left: 50px;
+    }
+    
 }
 
 .header-page--border {

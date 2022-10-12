@@ -3,61 +3,54 @@
     margin-right: auto;
     background: var(--bgd-color-footer);
     text-align: center;
-
-    @media screen and(max-width: 479px) {
-        width: calc(100% - 4px);
-    }
-
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @media screen and(min-width: 480px) {
-        padding: 118px 60px;
-        
+        width: 480px;
+        padding: 118px 60px;   
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 768px;
+        padding: 118px 204px;
     }
 
     @media screen and(min-width: 1200px) {
         width: 1200px;
-        
-        padding: 200px 0;
-        
+        padding: 200px 0;  
         height: 600px;
-        max-width: 1600px;
-        // margin-left: auto;
-        // margin-right: auto;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        max-width: 1600px;   
     }
 
 }
 
 .hero-section__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    color: var(--bgd-color);
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and(min-width: 480px) {
+        width: 360px;
+        font-size: 26px;
+        line-height: 1.6;
+        }
     
     @media screen and(min-width: 1200px) {
         width: 696px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        color: var(--bgd-color);
-        font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+        
     }
-    // width: 696px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-top: 0;
-    // color: var(--bgd-color);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // text-align: center;
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
+
 }
 
 .hero-section__btn {

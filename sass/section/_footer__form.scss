@@ -1,6 +1,17 @@
 .footer__form {
-    min-width: 570px;
-    margin-left: auto;
+    @media screen and(min-width: 480px) {
+        width: 450px;
+    }
+
+    // @media screen and(min-width: 768px) {
+    //     margin: 0 auto;
+    // }
+
+    @media screen and(min-width: 1200px) {
+        min-width: 570px;
+        margin-left: auto;
+    }
+    
 }
 
 .form__title {
@@ -18,7 +29,14 @@
 }
 
 .form__in {
-    width: 358px;
+    @media screen and(min-width: 480px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media screen and(min-width: 1200px) {
+        width: 358px;
+    }
+    
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
