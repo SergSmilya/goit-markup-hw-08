@@ -18,15 +18,15 @@ span.studio,
 }
 
 .footer-adress {
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and (max-width: 1199px)  {
         text-align: center;
     }
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
         display: flex;
     }
     @media screen and(min-width: 1200px) {
-        display: flex;
         align-items: baseline;
+        display: flex;
     }
     
 }
@@ -35,10 +35,10 @@ span.studio,
 .footer__social {
     margin-left: 70px;
     width: 206px;
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and (max-width: 767px)  {
         margin: 60px auto;
     }
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
         margin: 0;
     }
     
@@ -100,7 +100,7 @@ span.studio,
 }
 
 .auth__link {
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and (max-width: 1199px) {
         display: block;
     }
 }

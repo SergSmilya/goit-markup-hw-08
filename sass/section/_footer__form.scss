@@ -1,5 +1,5 @@
 .footer__form {
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and (max-width: 1199px) {
         width: 450px;
     }
 
@@ -29,7 +29,7 @@
 }
 
 .form__in {
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 480px) and(max-width: 1199px) {
         width: 100%;
         margin-bottom: 20px;
     }
