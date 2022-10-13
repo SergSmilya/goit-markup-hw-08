@@ -1,5 +1,5 @@
 .header-page {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
     }
@@ -7,12 +7,14 @@
 }
 
 .header-all {
-    @media screen and(min-width: 768px) {
+
+    @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    @media screen and(min-width: 1200px) {
+    
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
     }
@@ -56,13 +58,16 @@
 }
 
 .header__nav {
-    @media screen and(min-width: 480px) {
+
+    @media screen and(max-width: 767px) {
         display: none;
     }
+
     @media screen and(min-width: 768px) {
         display: flex;
         margin-left: 88px;
     }
+
     @media screen and(min-width: 1200px) {
         display: flex;
         margin-left: 93px;
@@ -103,11 +108,11 @@
 }
 
 .header-page .auth__nav {
-    @media screen and(min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 768px) {
         display: flex;
         margin-left: auto;
     }

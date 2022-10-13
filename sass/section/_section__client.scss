@@ -1,6 +1,6 @@
 .client__list {
 
-    @media screen and(min-width: 480px) and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
@@ -21,7 +21,7 @@
 }
 
 .client__link {
-    @media screen and(min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         width: 210px;
     }
 

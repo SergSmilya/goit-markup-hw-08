@@ -1,9 +1,8 @@
 .social {
     display: flex;
-    @media screen and(min-width: 480px) and (max-width: 767px) {
-        padding: 0 122px 24px;
-        justify-content: space-between;
-    }
+    padding: 0 122px 24px;
+    justify-content: space-between;
+
     @media screen and(min-width: 768px) {
         margin: 0 74px 24px;
         justify-content: space-between;
