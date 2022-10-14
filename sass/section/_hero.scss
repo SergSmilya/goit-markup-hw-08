@@ -4,7 +4,12 @@
     background: var(--bgd-color-footer);
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+    rgba(47, 48, 58, 0.4)), url(../../images/Hero-mobile/Header\ img.jpg);
+
+    @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../images/Hero-mobile/Header\ img@2x.jpg);
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,11 +17,25 @@
     padding: 118px 60px;
 
     @media screen and(min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img@2x.jpg);
+        }
         min-width: 768px;
         padding: 118px 204px;
     }
 
     @media screen and(min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../../images/hero\ @2x.jpg);
+        }
         min-width: 1200px;
         padding: 200px 0;  
         height: 600px;

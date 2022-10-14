@@ -314,6 +314,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  min-width: 480px;
 }
 
 a {
@@ -351,17 +352,26 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-all {
+@media screen and (max-width: 767px) {
+  .header__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header-all {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -455,6 +465,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header-page .auth__nav {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-page .auth__nav {
     display: flex;
     margin-left: auto;
   }
@@ -475,25 +490,42 @@ img {
   margin-right: auto;
   background: var(--bgd-color-footer);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-mobile/Header\ img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-width: 480px;
   padding: 118px 60px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-mobile/Header\ img@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img.jpg);
     min-width: 768px;
     padding: 118px 204px;
   }
 }
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img@2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
     min-width: 1200px;
     padding: 200px 0;
     height: 600px;
     max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero\ @2x.jpg);
   }
 }
 
@@ -800,18 +832,16 @@ img {
 
 .social {
   display: flex;
-  padding: 0 122px 24px;
+  margin: 0 122px 24px;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .social {
     margin: 0 74px 24px;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .social {
-    justify-content: space-between;
     margin: 16px 32px 30px;
   }
 }
@@ -957,11 +987,7 @@ img {
 
 .footer-logo {
   margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .footer-logo {
-    display: inline-block;
-  }
+  display: inline-block;
 }
 
 span.studio,
@@ -977,6 +1003,9 @@ span.studio,
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-adress {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1068,7 +1097,8 @@ span.studio,
 
 @media screen and (max-width: 1199px) {
   .footer__form {
-    min-width: 100%;
+    width: 450px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1335,4 +1365,24 @@ textarea::placeholder {
 }
 .modal__btn:hover .icon__clos, .modal__btn:hover .icon__clos {
   fill: var(--accent-color);
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

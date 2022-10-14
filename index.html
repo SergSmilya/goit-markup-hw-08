@@ -15,7 +15,7 @@
 <body>
   <!-- Шапка -->
   <header class="header-page">
-    <div class="container header-all">
+    <div class="container header__wrap">
       <nav class="header-all">
         <a class="logo" href="">Web<span>Studio</span></a>
         <ul class="header__nav list">
@@ -40,6 +40,12 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button class="menu-btn is-open" type="button">
+        <svg class="" width="40px" height="40px">
+          <use class="icon-menu" aria-label="Перемикач мобідьного меню" href="./images/icons.svg#menu_40px"></use>
+          <use class="icon-cross" href="./images/icons.svg#close_40px"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <!-- Main -->
@@ -112,15 +118,18 @@
         <h2 class="work__title">Чим ми займаємося</h2>
         <ul class="work__items list header-all">
           <li class="work__list">
-            <img class="work__img" src="./images/img-2.jpg" alt="Руки на клавиатуре" width="370" />
+            <img class="work__img" srcset="./images/img-2.jpg 1x, ./images/sec-work-retina/img-1.jpg 2x"
+              src="./images/img-2.jpg" alt="Руки на клавиатуре" width="370" />
             <p class="work__aside">Десктопні додатки</p>
           </li>
           <li class="work__list">
-            <img class="work__img" src="./images/box2-2.jpg" alt="Руки с телефоном и ноутбуком" width="370" />
+            <img class="work__img" srcset="./images/box2-2.jpg 1x, ./images/sec-work-retina/img-2.jpg 2x"
+              src="./images/box2-2.jpg" alt="Руки с телефоном и ноутбуком" width="370" />
             <p class="work__aside">Мобільні додатки</p>
           </li>
           <li class="work__list">
-            <img class="work__img" src="./images/box3-2.jpg" alt="Руки с планшетом" width="370" />
+            <img class="work__img" srcset="./images/box3-2.jpg 1x, ./images/sec-work-retina/img-3.jpg 2x"
+              src="./images/box3-2.jpg" alt="Руки с планшетом" width="370" />
             <p class="work__aside">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -132,7 +141,8 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list header-all">
           <li class="team__item">
-            <img class="team__img" src="./images/img-3-2.jpg" alt="Ігор Дем'яненко" width="270" />
+            <img class="team__img" srcset="./images/img-3-2.jpg 1x, ./images/Team-retina/Igor.jpg 2x"
+              src="./images/img-3-2.jpg" alt="Ігор Дем'яненко" width="270" />
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__text">Product Designer</p>
             <ul class="list social">
@@ -160,7 +170,8 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="./images/img-4-2.jpg" alt="Ольга Рєпіна" width="270" />
+            <img class="team__img" srcset="./images/img-4-2.jpg 1x, ./images/Team-retina/Olga.jpg 2x"
+              src="./images/img-4-2.jpg" alt="Ольга Рєпіна" width="270" />
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__text">Frontend Developer</p>
             <ul class="list social">
@@ -188,7 +199,8 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="./images/img-5-2.jpg" alt="Микола Тарасов" width="270" />
+            <img class="team__img" srcset="./images/img-5-2.jpg 1x, ./images/Team-retina/Michail.jpg 2x"
+              src="./images/img-5-2.jpg" alt="Микола Тарасов" width="270" />
             <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__text">Marketing</p>
             <ul class="list social">
@@ -216,7 +228,8 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="./images/img-6-2.jpg" alt="Михайло Єрмаков" width="270" />
+            <img class="team__img" srcset="./images/img-6-2.jpg 1x, ./images/Team-retina/Nikolay.jpg 2x"
+              src="./images/img-6-2.jpg" alt="Михайло Єрмаков" width="270" />
             <h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__text">UI Designer</p>
             <ul class="list social">
@@ -419,6 +432,8 @@
 
   <!-- modal.js -->
   <script src="./modal.js"></script>
+  <!-- Mobile-menu -->
+  <script src="./mobile-menu.js"></script>
 </body>
 
 </html>
