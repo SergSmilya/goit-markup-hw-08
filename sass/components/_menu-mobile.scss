@@ -4,16 +4,17 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
 }
 
 .menu-btn .icon-cross {
     display: none;
 }
 
-.menu-btn.is-open .icon-cross {
+.menu-btn .is-open .icon-cross {
     display: block;
 }
 
-.menu-btn.is-open .icon-menu {
+.menu-btn .is-open .icon-menu {
     display: none;
 }

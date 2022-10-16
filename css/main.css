@@ -282,7 +282,12 @@ summary {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  width: 480px;
+  width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1385,16 +1390,16 @@ textarea::placeholder {
   display: none;
 }
 
-.menu-btn.is-open .icon-cross {
+.menu-btn .is-open .icon-cross {
   display: block;
 }
 
-.menu-btn.is-open .icon-menu {
+.menu-btn .is-open .icon-menu {
   display: none;
 }
 
 .mob-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 480px;
