@@ -307,6 +307,7 @@ summary {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
   }
 }
 
@@ -352,6 +353,7 @@ img {
 @media screen and (max-width: 767px) {
   .header-page {
     padding: 16px 15px;
+    margin: 0 auto;
   }
 }
 
@@ -507,11 +509,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
-    min-width: 1200px;
-    padding: 200px 0;
+    width: 100%;
     height: 600px;
-    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1369,19 +1370,8 @@ textarea::placeholder {
   fill: var(--accent-color);
 }
 
-.menu-btn {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
 .mob-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1393,10 +1383,17 @@ textarea::placeholder {
 }
 
 .mob-menu {
-  width: 480px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 796px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 48px 40px;
   background-color: var(--bgd-color);
+  transform: translateX(-100%);
+  transition: transform 250ms var(--timing-funcion);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -1404,11 +1401,15 @@ textarea::placeholder {
   }
 }
 
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
 .mob-menu__list {
   margin-bottom: 306px;
 }
 
-.mob-mtnu__item:not(:last-child) {
+.mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -1467,4 +1468,17 @@ textarea::placeholder {
 .mob-social__link--non-decor::after {
   content: "";
   display: none;
+}
+
+.menu-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn--pos {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }/*# sourceMappingURL=main.css.map */

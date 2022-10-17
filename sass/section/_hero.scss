@@ -29,6 +29,9 @@
     }
 
     @media screen and(min-width: 1200px) {
+        width: 100%;
+        height: 600px;
+        padding: 200px 0;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
 
@@ -36,10 +39,7 @@
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../../images/hero\ @2x.jpg);
         }
-        min-width: 1200px;
-        padding: 200px 0;  
-        height: 600px;
-        max-width: 1600px;   
+
     }
 
 }
