@@ -1,20 +1,22 @@
 .menu-btn {
-    display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
 
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
-.menu-btn .icon-cross {
-    display: none;
-}
+// .menu-btn .icon-cross {
+//     display: none;
+// }
 
-.menu-btn .is-open .icon-cross {
-    display: block;
-}
+// .menu-btn .is-open .icon-cross {
+//     display: block;
+// }
 
-.menu-btn .is-open .icon-menu {
-    display: none;
-}
+// .menu-btn .is-open .icon-menu {
+//     display: none;
+// }

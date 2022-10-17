@@ -20,12 +20,13 @@
 }
 
 .modal {
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateX(0);
     width: 450px;
-    height: 581px;
+    height: 609px;
     background: var(--bgd-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,6 +37,7 @@
 
     @media screen and (min-width: 1200px) {
         width: 528px;
+        height: 581px;
     }
 }
 
@@ -129,6 +131,10 @@ textarea::placeholder {
 }
 
 .privacy__label {
+    @media screen and(max-width: 1199px) {
+        font-size: 12px;
+    }
+    
     display: flex;
     justify-content: center;
     align-items: center;

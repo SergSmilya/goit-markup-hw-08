@@ -1,11 +1,21 @@
+.mob-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
+}
 .mob-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     width: 480px;
     height: 796px;
     padding: 48px 40px;
     background-color: var(--bgd-color);
+    
     @media screen and(min-width: 768px) {
         display: none;
     }

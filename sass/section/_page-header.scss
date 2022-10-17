@@ -1,18 +1,14 @@
 .header-page {
-    @media screen and (max-width: 767px) {
-    position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    }
 
+    @media screen and (max-width:767px) {
+        padding: 16px 15px;
+    }
 }
 
 .header__wrap {
 
     @media screen and (max-width: 767px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: none;
     }
 
     @media screen and (min-width: 768px) {
@@ -70,10 +66,6 @@
 
 .header__nav {
 
-    @media screen and(max-width: 767px) {
-        display: none;
-    }
-
     @media screen and(min-width: 768px) {
         display: flex;
         margin-left: 88px;
@@ -119,12 +111,8 @@
 }
 
 .header-page .auth__nav {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
     @media screen and(min-width: 768px) {
-         margin-left: auto;
+        margin-left: auto;
     }
 
     @media screen and(min-width: 1200px) {
