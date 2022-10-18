@@ -2,12 +2,12 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
   <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <!-- Body -->
@@ -23,7 +23,7 @@
         </svg>
       </button>
     </div>
-    <div class="mob-menu is-open js-menu-container">
+    <div class="mob-menu js-menu-container">
       <button class="menu-btn menu-btn--pos js-close-menu" type="button">
         <svg class="" width="40px" height="40px">
           <use class="icon-cross" href="./images/icons.svg#close_40px"></use>
@@ -48,7 +48,6 @@
           </li>
         </ul>
       </nav>
-    </div>
     </div>
     <div class="container header__wrap">
       <nav class="header-all">
@@ -148,17 +147,17 @@
         <ul class="work__items list header-all">
           <li class="work__list">
             <img class="work__img" srcset="./images/img-2.jpg 1x, ./images/sec-work-retina/img-1.jpg 2x"
-              src="./images/img-2.jpg" alt="Руки на клавиатуре" width="370" />
+              src="./images/img-2.jpg" alt="Руки на клавиатуре" width="370">
             <p class="work__aside">Десктопні додатки</p>
           </li>
           <li class="work__list">
             <img class="work__img" srcset="./images/box2-2.jpg 1x, ./images/sec-work-retina/img-2.jpg 2x"
-              src="./images/box2-2.jpg" alt="Руки с телефоном и ноутбуком" width="370" />
+              src="./images/box2-2.jpg" alt="Руки с телефоном и ноутбуком" width="370">
             <p class="work__aside">Мобільні додатки</p>
           </li>
           <li class="work__list">
             <img class="work__img" srcset="./images/box3-2.jpg 1x, ./images/sec-work-retina/img-3.jpg 2x"
-              src="./images/box3-2.jpg" alt="Руки с планшетом" width="370" />
+              src="./images/box3-2.jpg" alt="Руки с планшетом" width="370">
             <p class="work__aside">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -170,8 +169,19 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list header-all">
           <li class="team__item">
-            <img class="team__img" srcset="./images/img-3-2.jpg 1x, ./images/Team-retina/Igor.jpg 2x"
-              src="./images/img-3-2.jpg" alt="Ігор Дем'яненко" width="270" />
+            <!-- Ігор Дем'яненко -->
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="./images/team/desctop/igorD./img.jpg 1x, ./images/team/desctop/igorD./img@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="
+            			./images/team/tablet/igorD./img.jpg 1x,
+            			./images/team/tablet/igorD./img@2x.jpg 2x
+            		">
+              <img class="team__img" srcset="
+            			./images/team/mobile/igorD./img.jpg 1x,
+            			./images/team/mobile/igorD./img@2x.jpg 2x
+            		" src="./images/team/mobile/igorD./img.jpg" width="450" alt="Ігор Дем'яненко" loading="lazy">
+            </picture>
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__text">Product Designer</p>
             <ul class="list social">
@@ -197,10 +207,20 @@
               </li>
             </ul>
           </li>
-
+          <!-- Ольга Рєпіна -->
           <li class="team__item">
-            <img class="team__img" srcset="./images/img-4-2.jpg 1x, ./images/Team-retina/Olga.jpg 2x"
-              src="./images/img-4-2.jpg" alt="Ольга Рєпіна" width="270" />
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="./images/team/desctop/olgaR./img.jpg 1x, ./images/team/desctop/olgaR./img@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="
+                ./images/team/tablet/olgaR./img.jpg 1x,
+                ./images/team/tablet/olgaR./img@2x.jpg 2x
+              ">
+              <img class="team__img" srcset="
+                ./images/team/mobile/olgaR./img.jpg 1x,
+                ./images/team/mobile/olgaR./img2@x.jpg 2x
+              " src="./images/team/mobile/olgaR./img.jpg" width="450" alt="Ольга Рєпіна" loading="lazy">
+            </picture>
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__text">Frontend Developer</p>
             <ul class="list social">
@@ -226,10 +246,20 @@
               </li>
             </ul>
           </li>
-
+          <!-- Микола Тарасов -->
           <li class="team__item">
-            <img class="team__img" srcset="./images/img-5-2.jpg 1x, ./images/Team-retina/Michail.jpg 2x"
-              src="./images/img-5-2.jpg" alt="Микола Тарасов" width="270" />
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="./images/team/desctop/michaelT./img.jpg 1x, ./images/team/desctop/michaelT./img@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="
+                ./images/team/tablet/michaelT./img.jpg 1x,
+                ./images/team/tablet/michaelT./img@2x.jpg 2x
+              ">
+              <img class="team__img" srcset="
+                ./images/team/mobile/michaelT./img.jpg 1x,
+                ./images/team/mobile/michaelT./img2@x.jpg 2x
+              " src="./images/team/mobile/michaelT./img.jpg" width="450" alt="Микола Тарасов" loading="lazy">
+            </picture>
             <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__text">Marketing</p>
             <ul class="list social">
@@ -255,10 +285,20 @@
               </li>
             </ul>
           </li>
-
+          <!-- Михайло Єрмаков -->
           <li class="team__item">
-            <img class="team__img" srcset="./images/img-6-2.jpg 1x, ./images/Team-retina/Nikolay.jpg 2x"
-              src="./images/img-6-2.jpg" alt="Михайло Єрмаков" width="270" />
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="./images/team/desctop/michaelErm./img.jpg 1x, ./images/team/desctop/michaelErm./img@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="
+                ./images/team/tablet/michaelErm./img.jpg 1x,
+                ./images/team/tablet/michaelErm./img@2x.jpg 2x
+              ">
+              <img class="team__img" srcset="
+                ./images/team/mobile/michaelErm./img.jpg 1x,
+                ./images/team/mobile/michaelErm./img2@x.jpg 2x
+              " src="./images/team/mobile/michaelErm./img.jpg" width="450" alt="Михайло Єрмаков" loading="lazy">
+            </picture>
             <h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__text">UI Designer</p>
             <ul class="list social">
@@ -307,7 +347,6 @@
             <a class="client__link" href=""><svg class="client__icon" width="43px" height="41px">
                 <use href="./images/icons.svg#icon-logo3"></use>
               </svg></a>
-            </svg>
           </li>
           <li class="client__items">
             <a class="client__link" href=""><svg class="client__icon" width="84px" height="41px">
@@ -406,7 +445,7 @@
       </button>
       <form class="">
 
-        <div class="modal__auth" role="autentification">
+        <div class="modal__auth">
           <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
 
           <div class="modal__wraper">
@@ -464,5 +503,17 @@
   <!-- Mobile-menu -->
   <script src="./mobile-menu.js"></script>
 </body>
+
+<picture>
+  <source media="(min-width:1200px)" srcset="./images/team/desk/image.jpg 1x, ./images/team/desk/image@2x.jpg 2x">
+  <source media="(min-width:768px)" srcset="
+			./images/team/tablet/image.jpg    1x,
+			./images/team/tablet/image@2x.jpg 2x
+		">
+  <img srcset="
+			./images/team/mobile/image.jpg    1x,
+			./images/team/mobile/image@2x.jpg 2x
+		" src="./images/team/mobile/image.jpg" width="450" alt="image" loading="lazy">
+</picture>
 
 </html>

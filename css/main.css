@@ -487,7 +487,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 480px;
   padding: 118px 60px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -498,7 +497,6 @@ img {
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img.jpg);
-    width: 768px;
     padding: 118px 204px;
   }
 }
@@ -824,17 +822,13 @@ img {
 
 .social {
   display: flex;
-  margin: 0 122px 24px;
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .social {
-    margin: 0 74px 24px;
-  }
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {
   .social {
-    margin: 16px 32px 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1387,7 +1381,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  height: 796px;
+  height: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 48px 40px;
@@ -1406,7 +1400,10 @@ textarea::placeholder {
 }
 
 .mob-menu__list {
-  margin-bottom: 306px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: auto;
 }
 
 .mob-menu__item:not(:last-child) {

@@ -13,7 +13,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 480px;
     padding: 118px 60px;
 
     @media screen and(min-width: 768px) {
@@ -24,7 +23,6 @@
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../../images/Hero-tablet/Header\ img@2x.jpg);
         }
-        width: 768px;
         padding: 118px 204px;
     }
 
